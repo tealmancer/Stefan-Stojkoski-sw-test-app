@@ -1,0 +1,398 @@
+.productView {
+  display:flex;  
+  position: absolute;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    top: 160px;
+    
+  }
+  .cartPageHeading{
+    margin: 0px;
+    padding: 4vw 0;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: capitalize;
+}
+
+  .productRemoveButton{
+    position: relative;
+    right: 28px;
+    color: white;
+    background-color: rgba(255, 0, 0,0.5);
+    border: 0;
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+    text-align: center;
+    text-justify: auto;
+  }
+
+  .menu-items .productRemoveButton:hover{
+    background-color: rgb(255, 0, 0);
+  }
+  .productRemoveButton:hover{
+    background-color: rgb(255, 0, 0);
+  }
+
+  .productGallery{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .imageList {
+    display: flex;
+    flex-direction: column;
+    width: 5%;
+    height: 80px;
+  }
+
+  .imageList img{
+    width: auto;
+    height: auto;
+    max-width: 79px;
+    max-height: 80px;
+    margin-bottom: 20px;
+  }
+
+  .imageDisplayed{
+    position: relative;
+    display: flex;
+    width: 55vw;
+    height: 35vw;
+
+  }
+
+  .imageDisplayed.cart{
+    width: 20vw;
+    height: auto;
+    min-height:15vw;
+    background-color: rgb(233, 229, 229);
+  }
+
+  .cartPage .imageDisplayed.cart{
+    height: auto;
+    min-height:24vw;
+    background-color: rgb(233, 229, 229);
+  }
+
+  .imageDisplayed img{
+    display: block;
+    width: auto;
+    height: auto;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    mix-blend-mode: multiply;
+    
+  } 
+
+  .imageDisplayedSelector{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+  }
+
+  .imageDisplayedSelector button{
+    border-width: 0px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 6.5px 10px;
+    margin-right: 2px;
+    height: 10%;
+    font-size: 14px;
+    z-index: 99;
+    text-align: center;
+  }
+
+  .productDetails{
+    width:21vw;
+  }
+
+  .productDetails.cart{
+    width:75%;
+  }
+
+  
+
+  .productDetails .productBrand{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 2vw;
+  }
+
+  .productDetails.cart .productBrand{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    font-size: 1vw;
+  }
+
+  .productDetails .productName {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 2vw;
+  }
+
+  .productDetails.cart .productName{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    font-size: 1vw;
+  }
+
+
+
+  .cartPage .cart .productBrand {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 1.75vw;
+  }
+
+  .cartPage .cart .productName {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 1.75vw;
+  }
+
+  .productDetails .attributeName{
+    text-size-adjust: 18px;
+    margin: 10px 0px 10px 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1vw;
+  }
+
+  .productDetails.cart .attributeName{
+    text-size-adjust: 18px;
+    margin: 10px 0px 10px 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    text-transform: capitalize;
+    font-size: 1vw;
+  }
+
+  .productDetails .productPrice{
+    text-size-adjust: 18px;
+    margin: 10px 0px 10px 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1vw;
+  }
+
+  .productDetails.cart .productPrice{
+    text-size-adjust: 18px;
+    margin: 10px 0px 10px 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 540;
+    text-transform: uppercase;
+    font-size: 1.1vw;
+  }
+
+  .cartPage .productDetails.cart .productPrice{
+    text-size-adjust: 18px;
+    margin: 20px 0px 20px 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.6vw;
+  }
+
+  .cartPage .cart .attributeName {
+ 
+    margin: 10px 0px 5px 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.95vw;
+  }
+
+  .attributeName.cart{
+    display:none;
+  }
+
+  .attributeList{
+    display: flex;
+    padding: 0px;
+    margin: 2px 0px 2px 0px;
+    flex-wrap: wrap;
+  }
+
+  .attributeElement {
+    display: flex;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    width: 50px;
+    height: 45px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(29, 31, 34, 1) ;
+    background-color: white;
+    color: black;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .attributeElement.show{
+    background-color: rgba(29, 31, 34, 1);
+    color: white;
+  }
+
+
+  .attributeElement:hover{
+    background-color: rgba(29, 31, 34, 1);
+    color: white;
+  }
+
+  .selectedButton{
+    position: relative;
+    width:2vw;
+    height:2vw;
+    border:2px solid rgba(124,252,0,0);
+    margin:0px 0px 0px 0px;
+    padding: 0px;
+  }
+
+  .selectedButton.show{
+    border:2px solid rgb(17, 156, 4);
+  }
+
+  .attributeColor{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    height: 90%;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .productDetails.cart .attributeElement{
+    font-size: 0.65vw;  
+    width: 2vw; 
+    height: 2vw;  
+  }
+
+  .productDetails.cart .attributeElement.show, .productDetails.cart .attributeElement.show:hover{
+    background-color: rgba(29, 31, 34, 1);
+    color: white;
+  }
+
+  .productDetails.cart .attributeElement:hover{
+    background-color: white;
+    color: black;
+  }
+
+  .productDetails.cart .selectedButton{
+    width: 1.6vw;
+    height: 1.6vw;
+  }
+
+  .cartPage{
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cartPage .productDetails .attributeElement{
+    margin-right: 6px;
+    margin-bottom: 6px;
+    width: 3vw;
+    height: 3vw;
+    font-size: 0.8vw;
+  }
+
+  .cartPage .productDetails .selectedButton{
+    margin-right: 6px;
+    margin-bottom: 6px;
+    width: 2.2vw;
+    height: 2.2vw;
+  }
+
+  .productQuantity{
+    display: flex;
+    padding: 0px 16px;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .productQuantity button{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: x-small;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(29, 31, 34, 1);
+    background-color: white;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    width: 2vw;
+    height: 2vw;
+  }
+
+  .productQuantity button:hover{
+    background-color: rgba(29, 31, 34, 1);
+    color: white;
+  }
+
+
+  .cartButton{
+    width: 21vw;
+    height: 52px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    background-color: #57b46a;
+    border: 0;
+  }
+
+  .cartButtonNoStock{
+    width: 21vw;
+    height: 52px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    background-color: #b45757;
+    border: 0;
+  }
+
+  .cartButton:hover{
+    background-color: green;
+    cursor: pointer;
+  }
+
+  .ProductDescription{
+    margin-top: 10px;
+  }
+
+  .priceTotal{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 2vw 0px 2vw 0vw;
+  }
+
+  .priceTotalCart{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 2.5vw;
+    font-weight: bold;
+  }
+
+  .orderButton{
+    width: 20%;
+    font-weight:bold;
+    height:3rem;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #57b46a;
+    color: white;
+   }
+  /*Source Sans Pro*/
