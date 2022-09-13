@@ -1,0 +1,131 @@
+.productDetails .attributeName{
+    text-size-adjust: 18px;
+    margin: 10px 0px 10px 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1vw;
+}
+
+.productDetails.cart .attributeName{
+  text-size-adjust: 18px;
+  margin: 10px 0px 10px 0px;
+  font-family: 'Raleway';
+  font-weight: 100;
+  text-transform: capitalize;
+  font-size: 1vw;
+}
+
+.cartPage .cart .attributeName {
+ 
+    margin: 10px 0px 5px 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.95vw;
+}
+
+.attributeName.cart{
+  display:none;
+}
+
+.attributeList{
+  display: flex;
+  padding: 0px;
+  margin: 2px 0px 2px 0px;
+  flex-wrap: wrap;
+}
+
+.attributeElement {
+  display: flex;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  width: 4vw;
+  height: 45px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(29, 31, 34, 1) ;
+  background-color: white;
+  color: black;
+  align-items: center;
+  justify-content: center;
+}
+
+.attributeElement.show{
+  background-color: rgba(29, 31, 34, 1);
+  color: white;
+}
+
+
+.attributeElement:hover{
+  background-color: rgba(29, 31, 34, 1);
+  color: white;
+}
+
+.selectedButton{
+  position: relative;
+  width:2vw;
+  height:2vw;
+  border:2px solid rgba(124,252,0,0);
+  margin:0px 0px 0px 0px;
+  padding: 0px;
+}
+
+.selectedButton.show{
+  border:2px solid rgb(17, 156, 4);
+}
+
+.attributeColor{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  width: 90%;
+  height: 90%;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.productDetails.cart .attributeElement{
+  font-size: 0.65vw;  
+  width: 2vw; 
+  height: 2vw;  
+}
+
+.productDetails.cart .attributeElement.show, .productDetails.cart .attributeElement.show:hover{
+  background-color: rgba(29, 31, 34, 1);
+  color: white;
+}
+
+.productDetails.cart .attributeElement:hover{
+  background-color: white;
+  color: black;
+}
+
+.productDetails.cart .selectedButton{
+  width: 1.6vw;
+  height: 1.6vw;
+}
+
+.cartPage{
+  padding: 10px 0px 10px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cartPage .productDetails .attributeElement{
+  margin-right: 6px;
+  margin-bottom: 6px;
+  width: 3vw;
+  height: 3vw;
+  font-size: 0.8vw;
+}
+
+.cartPage .productDetails .selectedButton{
+  margin-right: 6px;
+  margin-bottom: 6px;
+  width: 2.2vw;
+  height: 2.2vw;
+}
