@@ -19,6 +19,7 @@ function PRODUCT(id){
   const product = gql`
   query GetProducts {
     product(id:"${id}") {
+      id
       brand
       name
       inStock
