@@ -11,7 +11,6 @@ import { Link } from "react-router-dom";
 
 
 import {updateQuantity} from "./cart"
-import {showQuantity} from "./cart";
 import { removeItem } from "./cart";
 
 import { gql } from "@apollo/client";
@@ -56,7 +55,7 @@ class CartItems extends React.Component {
                                 return (
                                 <li key={index}>  
                                     <ProductInfo state={item.selAtts} data={{product:item.data.product, currency:data.currency}} displayType="cart" />
-                                    <ProductQuantity update = {(arg) => {updateQuantity(index,arg)}} quantity = {showQuantity(index)} />
+                                    <ProductQuantity update = {(arg) => {updateQuantity(index,arg)}} quantity = {item.quantity} />
                                     <ProductGallery gallery={item.data.product.gallery} displayType="cart" />
                                     <button className="productRemoveButton"  onClick={()=>{removeItem(index)}}>X</button>
                                 </li> 
