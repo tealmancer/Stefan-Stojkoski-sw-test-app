@@ -78,12 +78,13 @@ class ProductClass extends React.Component{
     
     const selAtts = this.state.selectedAttributes;
 
-    if(selAtts.length !== data.product.attributes.length){
-      alert("Select all item attributes first!");
-      return;
+
+    for(let i = 0; i<selAtts.length; i++){
+      if(selAtts[i].value === undefined){
+        alert("Select all item attributes first!");
+        return;
+      }
     }
-    
-    
     insertItem({data:{product:data.product},selAtts,quantity:1});
   }
 
@@ -103,9 +104,9 @@ class ProductClass extends React.Component{
       }
     }
     `}).then((result)=>{
-      //let sa = [];
-      // result.data.product.attributes.forEach(({name,items}) => {sa.push({name:name,value:items[0].value})})
-      // this.setState({selectedAttributes:sa});
+      let sa = [];
+      result.data.product.attributes.forEach(({name,items}) => {sa.push({name:name,value:undefined})})
+      this.setState({selectedAttributes:sa});
     })
 
 
